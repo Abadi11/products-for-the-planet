@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import FakeCard from "./FakeCard";
+import OneDragDrop from "./OneDragDrop";
 
 const cardsFromBackend = [
   [
@@ -31,7 +32,14 @@ function DregDrop() {
   }
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", height: "100vh", width: '100%' }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        height: "100vh",
+        width: "100%",
+      }}
+    >
       <DragDropContext
         onDragEnd={(result) => {
           return console.log(result), onDragEnd(result);
@@ -39,7 +47,7 @@ function DregDrop() {
       >
         {cards.map((column, columnIndex) => {
           return (
-            <div style={{margin: 10}}>
+            <div style={{ margin: 10 }}>
               <Droppable key={columnIndex} droppableId={columnIndex.toString()}>
                 {(provided, snapshot) => {
                   return (
@@ -51,8 +59,8 @@ function DregDrop() {
                           ? "lightblue"
                           : "lightgrey",
                         padding: 4,
-                        width: '250',
-                        height: '500',
+                        width: "250",
+                        height: "500",
                       }}
                     >
                       {cards[columnIndex].map((card, index) => {
@@ -88,8 +96,8 @@ function DregDrop() {
           );
         })}
         {/*  */}
-        
       </DragDropContext>
+      <OneDragDrop onDragEnd={onDragEnd} />
     </div>
   );
 }
