@@ -1,0 +1,54 @@
+{
+    "cards" : {
+        "human": {
+            "name" : "Human",
+            "position" : "A",
+            "text" : "Humans are the root cause of 'man-made climate change'",
+            "type" : "cause",
+            "total carbon emissions per year" : "55 MTonnes CO2 - half a million whales",
+            "average carbon emissions per person per year - thanks PawPrint <3" : "13 tonnes CO2 - almost 2 elephants"
+        },
+        "transport" : {
+            "name" : "Transportation",
+            "position" : "B",
+            "text" : "In Scotland there are more than 3 million registered road vehicles. More than 95% are powered by fossil fuels.",
+            "type" : "consequence",
+            "carbon emission per year" : "15 MTonnes CO2 - 130,000 whales"
+        },
+        "greenhouse_gases" : {
+            "name" : "Greenhouse Gases",
+            "position" : "C",
+            "text" : "Greenhouse gases like CO2 and methane are released by burning fossil fuels",
+            "type" : "consequence",
+            "global emissions per year" :
+            
+        },
+        "greenhouse_effect" : {
+            "name" : "Greenhouse Effect",
+            "position" : "D",
+            "text" : "",
+            "type" : "consequence"
+            
+        },
+        "rising_temp" : {
+            "name" : "Rising Temperatures",
+            "position" : "E",
+            "text" : "",
+            "type" : "consequence"
+            
+        }, 
+        "icecaps_melting" : {
+            "name" : "Melting Icecaps",
+            "position" : "F",
+            "text" : "",
+            "type" : "consequence"
+        },
+        "trees" : {
+            "name" : "Planting Trees",
+            "position" : "G",
+            "text" : "Planting and growing trees help reduce climate emissions by capturing carbon dioxide from the air.",
+            "type" : "solution"
+
+        }
+    }
+}

@@ -8,7 +8,7 @@ const cardsFromBackend = [
     { id: "card-2", content: "BBBBBB" },
   ],
   [{ id: "card-3", content: "CCCCC" }],
-  [{id: "card-4", content: ""}]
+  //[{id: "card-4", content: ""}]
 ];
 
 function DregDrop() {
